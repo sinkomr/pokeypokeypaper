@@ -1,5 +1,91 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[prl,amsmath,twocolumn,amssymb,superscriptaddress,linenumbers]{revtex4-1}
+%\usepackage[T1]{fontenc}
+\usepackage{times}
+%\usepackage[latin9]{inputenc}
+%\setcounter{secnumdepth}{3}
+\usepackage{graphicx}
+\usepackage{amsmath, braket}
+\usepackage{amssymb}
+\usepackage{natbib}
+%\usepackage{titling}
+%\usepackage{babel}
+%\usepackage{bm, ulem} % seemed to be putting underlines in a few undesirable situations
+\usepackage[normalem]{ulem} % enables strikeout (\sout) without changing \emph
+\usepackage[usenames]{xcolor}
+%\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[parse-numbers=false]{siunitx} % handles numbers with units nicely in both math mode and text mode
+\usepackage{xspace} % correctly handles spaces after macros
+% \usepackage{multibbl} % enables two bibliographies (for SI)
+\usepackage[colorlinks]{hyperref}
+
+% separate bibliography stuff
+% \newbibliography{main} % multibbl option
+% \newbibliography{appendix} % multibbl option
+
+\newcommand{\tas}{\ce{TaS2}\xspace}
+\newcommand{\nbse}{\ce{NbSe2}\xspace}
+\newcommand{\hBN}{h-\ce{BN}\xspace}
+
+\newcommand{\Kv}{\ensuremath{\mathbf{K}}\xspace}
+\newcommand{\Kpv}{\ensuremath{\mathbf{K'}}\xspace}
+\newcommand{\K}{K\xspace}
+\newcommand{\Kp}{K$^\prime$\xspace}
+
+\newcommand{\Rn}{\ensuremath{R_n}}
+\newcommand{\Rgr}{\ensuremath{R_\mathrm{graphite}}}
+\newcommand{\muB}{\ensuremath{\mu_\mathrm{B}}}
+\newcommand{\kB}{\ensuremath{k_\mathrm{B}}}
+\newcommand{\kF}{\ensuremath{k_\mathrm{F}}}
+\newcommand{\kFv}{\ensuremath{\mathbf{k}_\mathrm{F}}}
+
+\newcommand{\Tc}{\ensuremath{T_c}}
+\newcommand{\Tcz}{\ensuremath{T_{c0}}}
+
+\newcommand{\Pauli}{p}%{\mathrm{P}}
+\newcommand{\Hp}{\ensuremath{H_\Pauli}}
+\newcommand{\Hso}{\ensuremath{H_\mathrm{so}}}
+\newcommand{\Hperp}{\ensuremath{H_\perp}}
+\newcommand{\Hpara}{\ensuremath{H_\parallel}}
+\newcommand{\Hc}{\ensuremath{H_{c2}^\parallel}}
+
+\newcommand{\Bpara}{\ensuremath{B_\parallel}}
+\newcommand{\Bso}{\ensuremath{B_\mathrm{so}}}
+\newcommand{\Bsov}{\ensuremath{\mathbf{B}_\mathrm{so}}}
+
+\newcommand{\Dso}{\ensuremath{\Delta_\mathrm{so}}}
+\newcommand{\Dsok}{\ensuremath{\Delta_\mathrm{so}(\mathbf{k})}}
+\newcommand{\Dvb}{\ensuremath{\Delta_\mathrm{vb}}}
+\newcommand{\Dvbk}{\ensuremath{\Delta_\mathrm{vb}(\mathbf{k})}}
+\newcommand{\lso}{\ensuremath{\lambda_\mathrm{so}}}
+\newcommand{\tso}{\ensuremath{\tau_\mathrm{so}}}
+\newcommand{\alphaR}{\ensuremath{\alpha_\mathrm{R}}}
+
+\newcommand{\revise}[1]{\noindent\colorbox{lightgray}{#1}\xspace}
+\newcommand{\new}[1]{#1\xspace}
+\newcommand{\cut}[1]{\xspace}
+% \newcommand{\new}[1]{{\color{blue}#1}\xspace}
+% \newcommand{\cut}[1]{{\color{red}\sout{#1}}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-(Type your content here.)
+
+\title{Pokey Pokey method}
+
+\author{Michael~R.~Sinko} \email{msinko@andrew.cmu.edu}
+\author{Devashish~P.~Gopalan}% \email{dgopalan@andrew.cmu.edu}
+\affiliation{Department of Physics, Carnegie Mellon University, Pittsburgh, PA 15213}
+\author{Dacen~Waters}% \email{}
+\affiliation{Department of Physics, Carnegie Mellon University, Pittsburgh, PA 15213}
+
+\author{Benjamin~M.~Hunt} \email{bmhunt@andrew.cmu.edu}
+\affiliation{Department of Physics, Carnegie Mellon University, Pittsburgh, PA 15213}
+
+\begin{abstract}
+ 
+\end{abstract}
+\maketitle
+
+Lithographic patterning of metallic leads is a common nanofabrication technique used in a wide array of applications. One persistent issue is in this process is difficulty in the removal of excess evaporated metal around the features of the mask. This problem can be mitigated to a great extent by careful preparation of the sample before lithographic patterning by the choice of mask/resist materials/layers, better design of lithographic features, and liftoff process. In cases where these steps have not worked, or have not been taken, the most common step to complete the liftoff of undesired regions is to ultrasonicate the sample in a container of acetone. This method is viable for samples that are not sensitive to such vibrations, but would be inadviseable for other samples, such as ones that contain layered 2D materials or stacks of 2D materials forming van der Waals (vdW) heterostructures.  
+The vdW forces that adhere these types of samples to the substrate, approx $0.35J/m^2$ according to DFT calculations (other estimates have ranged from $0.09J/m^2$ to $0.9J/m^2$) are significantly less than the energy densities a system in a sonication bath is subject to (what are those energies? source?). This would imply that it is quite likely for a 2D material adhered to a substrate through vdW forces to be knocked loose by the energy input by a sonication bath, nonetheless the power of a sonication probe which can be 1000x greater than that of a bath.
 \end{document}
